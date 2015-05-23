@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>MCA Master Data App</title>
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"/>
+</head>
+<body ng-controller="mainCtrl"> 
+    <div class="row-fluid"><div style="margin:auto;text-align:center;"><h2>{{title}}</h2></div></div><hr>
+    <div class="container">
+        <div class="row-fluid">
+            <div class="col-md-6">
+                <form class="form">
+                  <div class="form-group">
+                    <label for="exampleInputName">Enter CIN/FCRN /LLPIN/FLLPIN -- for example: AAA-3246</label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="CIN" ng-model="cin">
+                  </div>
+                  <button type="submit" class="btn btn-primary" ng-click="fetchCin()">Fetch Info</button>
+                </form>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        
+        <div class="row-fluid" style="clear:both;float:right;">Angular seed app: v<span app-version></span></div>
+    </div><!-- /.container -->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  -->
+  <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
